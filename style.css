@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair", serif;
+    font-optical-sizing: auto;
+    font-weight: 24;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+body {
+    background: #001163;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 68rem;
+    margin: auto;
+}
+
+.header {
+    background: black;
+    padding: 1.1rem 0;
+    margin-bottom: 15rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.sobre-mim {
+    margin-top: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-modal {
+    background-color: #001163;
+    cursor: pointer;
+    border: none;
+}
+
+.sobre-left>h2 {
+    color: #001163;
+}
+
+.sobre-mim-text h2 {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.sobre-mim-text span {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.sobre-mim-img {
+    width: 11rem;
+}
+
+.eu {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+.sobre-card {
+    display: flex;
+    flex-direction: column;
+    background: #FFD84A;
+    color: black;
+    padding: 2rem;
+    border-radius: 0.4rem;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+.sobre-right>h2 {
+    margin-bottom: 0.9rem;
+}
+
+.quem-sou-eu {
+    display: flex;
+}
+
+.minhas-habilidades>h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #001163;
+}
+
+.skills {
+    display: flex;
+    justify-content: end;
+}
+
+.hard-skills>ul>li,
+.soft-skills>ul>li {
+    padding: 0.1rem;
+}
+
+.perfil {
+    width: 10rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.2rem;
+    margin-right: 4rem;
+}
+
+.projetos h2 {
+    text-align: center;
+    margin-bottom: 2.1rem;
+    font-size: 2rem;
+    color: #FFD84A;
+}
+
+.projetos-container {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.projetos-container > .project-rigth {
+    align-items: end;
+}
+
+.projeto>p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #FFD84A;
+}
+
+.projeto img {
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;
+}
+
+.center-img {
+    display: block;
+    margin: 2.5rem auto;
+    height: 20rem;
+}
+
+.contato-section {
+    margin-top: 15rem;
+}
+
+.contato-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4.2rem;
+}
+
+.contato-big h2 {
+    font-size: 2.8rem;
+    text-align: right;
+}
+
+.contato-text h2 {
+    font-size: 2.8rem;
+    color: #FFD84A;
+}
+
+.contato-img {
+    width: 11rem;
+}
+
+.github > a, .gmail > a, .contato-big h2 {
+    text-decoration: none;
+    color: #FFD84A;
+}
+
+.form-card {
+    background: #FFD84A;
+    padding: 2rem;
+    margin-top: 15rem;
+    margin-bottom: 4rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    color: #001163;
+}
+
+.form-card input,
+.form-card textarea {
+    padding: 0.9rem;
+    border: none;
+    border-radius: 0.4rem;
+    background-color: black;
+}
+
+.form-card input,
+.form-card textarea {
+    color: white;
+}
+
+.form-card button {
+    padding: 0.8rem;
+    border: none;
+    background: #001163;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+}
+
+.phone {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
