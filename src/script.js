@@ -4,7 +4,9 @@ logo.addEventListener('click', () => {
   const a = document.createElement('a');
   a.href = './img/Curriculo.pdf';
   a.download = 'Curriculo-Arthur-Munaier.pdf';
+  document.body.appendChild(a);
   a.click();
+  document.body.removeChild(a);
 });
 
 const modal = document.getElementById("modal");
