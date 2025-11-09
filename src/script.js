@@ -9,6 +9,7 @@ logo.addEventListener('click', () => {
   document.body.removeChild(a);
 });
 
+
 const modal = document.getElementById("modal");
 const abrir = document.getElementById("abrir");
 const fechar = document.getElementById("fechar");
