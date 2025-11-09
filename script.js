@@ -2,7 +2,7 @@ const logo = document.querySelector('.logo');
 
 logo.addEventListener('click', () => {
   const a = document.createElement('a');
-  a.href = '/Curriculo.pdf';
+  a.href = 'Curriculo.pdf';
   a.download = 'Curriculo-Arthur-Munaier.pdf';
   a.click();
 });
@@ -112,4 +112,5 @@ function digitar() {
 }
 
 digitar();
+
 
