@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header animar">
         <div class="container header-container">
             <nav>
                 <ul class="nav-links">
@@ -26,27 +26,38 @@
                 </ul>
             </nav>
             <h1 class="logo">CURRÍCULO</h1>
+            <button id="toggleDarkMode" class="dark-btn">🌙</button>
         </div>
     </header>
 
-    <section id="sobre" class="sobre-mim container">
+    <section id="sobre" class="sobre-mim container animar">
         <div class="sobre-mim-text">
-            <h2>Olá, eu sou o<br><span>Arthur Munaier</span><br>Desenvolvedor (Web, Front-End e Back-End)</h2>
+            <h2>Olá, eu sou o<br><span id="type"></span></h2>
         </div>
         <button id="openModalBtn" class="open-modal">
-            <img class="sobre-mim-img" src="image 6.png" alt="Pasta">
+            <img id="abrir" class="sobre-mim-img" src="pasta.png" alt="Pasta">
         </button>
     </section>
 
-    <section id="eu" class="eu container">
+
+    <div id="modal" class="modal animar">
+        <div class="conteudo">
+            <button id="fechar">❌</button>
+            <p><a href="https://github.com/ArthurMunaier" target="_blank">GitHub</a></p>
+            <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=arthurabmunaier@gmail.com"
+                    target="_blank">Email</a></p>
+        </div>
+    </div>
+
+
+    <section id="eu" class="eu container animar">
         <div class="sobre-card">
             <div class="quem-sou-eu">
                 <div class="sobre-left">
                     <h2>Quem sou eu</h2>
-                    <img src="image 9.png" class="perfil" alt="Foto perfil">
+                    <img src="eu.png" class="perfil" alt="Foto perfil">
                 </div>
                 <div class="sobre-right">
-
                     <p>
                         Arthur Munaier | Estudante de Desenvolvimento Web
                     </p>
@@ -56,7 +67,7 @@
                         Cotemig, tenho me dedicado intensamente à formação em
                         Desenvolvimento Web. Minha trajetória acadêmica é focada no aprendizado das principais
                         tecnologias de
-                        Front-End e Back-End, construindo uma base sólida para me tornar um profissional Full Stack.
+                        Front-End e Back-End, construindo uma base sólida para me tornar um profissional Full Stack.
                     </p>
                     <br>
                     <p>
@@ -74,7 +85,7 @@
                 <h2>Minhas Habilidades</h2>
                 <div class="skills">
                     <div class="hard-skills">
-                        <p><b>Hard Skills</b></p>
+                        <p>Hard Skills</p>
                         <ul>
                             <li>Front-End: HTML, CSS, JavaScript (iniciante);</li>
                             <li>Banco de Dados: MySQL (iniciante);</li>
@@ -85,7 +96,7 @@
                         </ul>
                     </div>
                     <div class="soft-skills">
-                        <p><b>Soft Skills</b></p>
+                        <p>Soft Skills</p>
                         <ul>
                             <li>Trabalho em equipe: facilidade em colaborar e compartilhar ideias</li>
                             <li>Comunicação: clareza ao expor pensamentos e apresentar projetos;</li>
@@ -101,46 +112,54 @@
         </div>
     </section>
 
-    <section id="project" class="projetos container">
+    <section id="project" class="projetos container animar">
         <h2>Meus projetos</h2>
 
         <div class="projetos-container">
             <div class="project-left">
                 <div class="projeto">
-                    <img src="image 6.png" alt="Projeto">
+                    <a href="https://github.com/ArthurMunaier/ecommerceRoupa" target="_blank">
+                        <img src="project1.png" alt="Projeto">
+                    </a>
                     <p><b>GITHUB</b></p>
                 </div>
                 <div class="projeto">
-                    <img src="image 6.png" alt="Projeto">
+                    <a href="https://github.com/ArthurMunaier/Tulen-site0001" target="_blank">
+                        <img src="project2.png" alt="Projeto">
+                    </a>
                 </div>
             </div>
 
-            <img class="center-img" src="image 3.png" alt="Ilustração">
+            <img class="center-img" src="figurinha.png" alt="Ilustração">
 
             <div class="project-rigth">
                 <div class="projeto">
-                    <img src="image 6.png" alt="Projeto">
+                    <a href="https://github.com/ArthurMunaier/Bitmap01" target="_blank">
+                        <img src="project3.png" alt="Projeto">
+                    </a>
                     <p><b>GITHUB</b></p>
                 </div>
                 <div class="projeto">
-                    <img src="image 6.png" alt="Projeto">
+                    <a href="https://github.com/ArthurMunaier/Belara" target="_blank">
+                        <img src="project4.png" alt="Projeto">
+                    </a>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <section id="contact" class="contato-section container">
+    <section id="contact" class="contato-section container animar">
         <div class="contato-wrapper">
             <div class="contato-big">
                 <h2 class="github"><a href="https://github.com/ArthurMunaier" target="_blank">GITHUB</a></h2>
                 <br>
                 <h2>OU</h2>
                 <br>
-                <h2 class="gmail"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=arthurabmunaier@gmail.com" target="_blank">GMAIL</a></h2>
+                <h2 class="gmail"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=arthurabmunaier@gmail.com"
+                        target="_blank">GMAIL</a></h2>
             </div>
 
-            <img src="image 6.png" alt="Pasta" class="contato-img">
+            <img src="pasta.png" alt="Pasta" class="contato-img">
 
             <div class="contato-text">
                 <h2>Onde<br>Me<br>Achar</h2>
@@ -148,18 +167,43 @@
         </div>
     </section>
 
-    <section class="form-section container">
-        <form class="form-card">
+    <section class="form-section container animar">
+        <form class="form-card" id="formContato">
             <label for="nome">Nome</label>
-            <input id="nome" name="nome" type="text">
+            <input id="nome" name="nome" type="text" required>
+
             <label for="email">Email</label>
-            <input id="email" name="email" type="email">
+            <input id="email" name="email" type="email" required>
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="text" required>
+
             <label for="msg">Sua Mensagem</label>
-            <textarea id="msg" name="msg"></textarea>
-            <button>Enviar</button>
-            <p class="phone">+55 31 98862-2770</p>
+            <textarea id="msg" name="msg" required></textarea>
+
+            <button type="submit">Enviar</button>
+
+            <p id="status" style="margin-top: 1rem; font-size: 1.1rem;"></p>
         </form>
+
     </section>
+
+    <footer class="footer animar">
+        <div class="footer-container">
+            <h3>Contato</h3>
+
+            <p>📧 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arthurabmunaier@gmail.com" target="_blank">
+                    arthurabmunaier@gmail.com
+                </a></p>
+
+            <p>💻 <a href="https://github.com/ArthurMunaier" target="_blank">GitHub</a></p>
+
+            <p>📱 <a>+55 31 98862-2770</a></p>
+
+            <p class="copy">© 2025 Arthur Munaier</p>
+        </div>
+    </footer>
+
 
     <script src="script.js"></script>
 </body>
